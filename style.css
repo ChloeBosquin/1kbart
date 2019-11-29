@@ -69,7 +69,13 @@ nav{
 .artworks img{
     max-width: 700px;
 }
-.descritpionImg{
+.descritpionImg:not(.descritpionImg.largeImage){
     margin-top: -50px;
     margin-bottom: var(--standard-measure);
+}
+.largeImage{
+margin-top: 120px;
+}
+.current-link {
+    color:#baada7;
 }

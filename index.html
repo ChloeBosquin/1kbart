@@ -13,10 +13,10 @@
 <body>
     <header>
         <nav class="topnav">
-            <a href="#" class="active"><img src="1kbart-logo.svg" alt="1kbart-logo" class="logo"></a>
+            <a href="index.html" class="active"><img src="1kbart-logo.svg" alt="1kbart-logo" class="logo"></a>
             <div id="burgerLinks" class="burger">
-                <a href="#">about</a>
-                <a href="#">submit</a>
+                <a href="about.html" class="navLink about">about</a>
+                <a href="index.html" class="navLink submit">submit</a>
             </div>
  
         </nav>
@@ -60,9 +60,9 @@
             </div>
         </div>
         </div>
-        <div class="artworks">
-            <img src="1kbart-img4.svg" alt="1kbart-img1-svg">
-            <div class="descritpionImg">
+        <div class="artworks largeImage">
+            <img src="1kbart-img4.svg"  alt="1kbart-img1-svg">
+            <div class="largeImage largeImage">
                 <p>artwork title</p>        
                 <p>artist name - 448 bytes</p>
                 <a src="1kbart-img4.svg" download>
@@ -93,6 +93,11 @@
 </body>
 
 </html>
-           <!-- <a href="#" onclick="showBurger()" href="javascript:void(0);" id="burgerIcon">
-                <i class="fa fa-bars"></i>
-            </a> -->
+<script>
+    currentLinks = document.getElementsByClassName("navLink");
+    var curPage = document.URL;
+    curPage = curPage.substr(curPage.lastIndexOf("/")) ;
+    console.log(curPage);
+    // currentLinks.forEach(
+    //     link=>this.className += ' current-link');
+</script>
