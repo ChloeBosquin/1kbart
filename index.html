@@ -8,17 +8,20 @@
     <title>1kbart Website</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
     <header>
         <nav class="topnav">
-            <a href="index.html" class="active"><img src="1kbart-logo.svg" alt="1kbart-logo" class="logo"></a>
+            <a href="index.html" class="logo"><img src="1kbart-logo.svg" alt="1kbart-logo" class="logo"></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
             <div id="burgerLinks" class="burger">
                 <a href="about.html" class="navLink about">about</a>
                 <a href="index.html" class="navLink submit">submit</a>
             </div>
- 
         </nav>
     </header>
     <section class="intro sections">
@@ -101,3 +104,13 @@
     // currentLinks.forEach(
     //     link=>this.className += ' current-link');
 </script>
+<script>
+    function myFunction() {
+      var x = document.getElementById("burgerLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
